@@ -33,13 +33,13 @@
    var tableBody = document.querySelector("#numberTable tbody");
    
    button.addEventListener ("click",() => {
-      if (usedNumbers.size === 18) {
+      if (usedNumbers.size === 21) {
           santa.innerHTML = "Done!";
           return;
       }
       let x;
       do {
-          x = Math.floor(Math.random() * 18) + 1;
+          x = Math.floor(Math.random() * 21) + 1;
       } while (usedNumbers.has(x));
       usedNumbers.add(x);
       santa.innerHTML = x;
@@ -60,3 +60,4 @@
 </body>
 
 </html>
+
